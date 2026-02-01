@@ -1,0 +1,59 @@
+:root {
+    --black: #050505;
+    --card: #111111;
+    --silver: #e0e0e0;
+    --gray: #666666;
+}
+
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body { font-family: 'Poppins', sans-serif; background: var(--black); color: #fff; margin: 0; line-height: 1.6; }
+
+header { height: 35vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(to bottom, #111, var(--black)); }
+h1 { font-size: 2.8rem; letter-spacing: 2px; margin: 0; font-weight: 600; text-transform: none; }
+.tagline { color: var(--gray); font-size: 1rem; margin-top: 10px; }
+
+nav { position: sticky; top: 0; background: rgba(5,5,5,0.95); padding: 1.2rem; z-index: 1000; text-align: center; border-bottom: 1px solid #222; }
+nav a { color: var(--gray); margin: 0 15px; text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+nav a:hover { color: #fff; }
+
+section { padding: 4rem 12%; }
+h2 { border-bottom: 1px solid var(--gray); display: inline-block; padding-bottom: 10px; font-weight: 400; margin-bottom: 2.5rem; color: var(--silver); }
+
+.profil-card { background: var(--card); padding: 2.5rem; border-left: 3px solid var(--silver); border-radius: 4px; }
+
+.skills-wrapper { max-width: 450px; }
+.skill-item { margin-bottom: 18px; font-size: 0.85rem; color: var(--gray); }
+.bar { background: #222; height: 3px; margin-top: 6px; }
+.fill { background: var(--silver); height: 100%; transition: 1s ease-in-out; }
+
+details { background: var(--card); margin-bottom: 1rem; border: 1px solid #1a1a1a; transition: 0.3s; }
+summary { display: flex; align-items: center; padding: 1.2rem; cursor: pointer; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary img { width: 50px; height: 50px; object-fit: cover; margin-right: 20px; border-radius: 2px; }
+.summary-info { flex-grow: 1; font-weight: 600; }
+.summary-info span { display: block; font-size: 0.65rem; color: #444; text-transform: uppercase; letter-spacing: 1px; }
+
+.expanded-layout { display: flex; gap: 40px; padding: 2.5rem; background: #080808; border-top: 1px solid #222; animation: slideDown 0.4s ease; }
+.project-description { flex: 1; text-align: left; }
+.project-description h4 { font-size: 0.8rem; color: var(--silver); text-transform: uppercase; margin-top: 0; }
+.project-description p { font-size: 0.9rem; color: #888; }
+.project-visual { flex: 1.2; display: flex; align-items: center; }
+video { width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+
+.lab-card { border: 1px dashed #333; }
+.status-tag { display: inline-block; padding: 5px 12px; background: #111; border: 1px solid #222; font-size: 0.7rem; color: var(--silver); border-radius: 20px; margin-top: 15px; }
+.code-terminal { background: #000; padding: 1.5rem; border: 1px solid #222; border-radius: 6px; font-family: monospace; font-size: 0.8rem; color: #38bdf8; line-height: 1.4; width: 100%; }
+
+.diag-small { width: 100px; margin-top: 20px; filter: invert(1); opacity: 0.4; }
+.cat-title { margin-top: 3.5rem; font-size: 1rem; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; }
+
+footer { background: #000; text-align: center; padding: 5rem 0; border-top: 1px solid #111; }
+footer a { color: var(--silver); text-decoration: none; border-bottom: 1px solid #333; }
+
+@keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 900px) {
+    section { padding: 3rem 5%; }
+    .expanded-layout { flex-direction: column; gap: 20px; }
+    h1 { font-size: 2rem; }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickson Fotsa | Portfolio Ingénieur ASTRE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Nickson FOTSA</h1>
+            <p class="tagline">Élève-Ingénieur ASTRE | Systèmes Embarqués & Software</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Réalisations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="profil">
+        <div class="profil-card">
+            <h2>Profil Professionnel</h2>
+            <p>Élève-ingénieur à l'<strong>ENSIM</strong> (spécialité ASTRE), je me spécialise dans l'informatique embarquée et les systèmes temps réel. Mon parcours en Automatique m'a permis de développer une solide expertise technique en électronique et en développement bas niveau (C/C++). Curieux et polyvalent, j'intègre également des compétences en développement Web et Java pour concevoir des interfaces de contrôle et de monitoring. Je suis à la recherche d'une <strong>alternance dès Septembre 2026</strong> pour mettre mes compétences au service de projets industriels innovants.</p>
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Compétences Techniques</h2>
+        <div class="skills-wrapper">
+            <div class="skill-item"><span>C / C++</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
+            <div class="skill-item"><span>Assembleur</span><div class="bar"><div class="fill" style="width: 60%;"></div></div></div>
+            <div class="skill-item"><span>Python</span><div class="bar"><div class="fill" style="width: 55%;"></div></div></div>
+            <div class="skill-item"><span>Java</span><div class="bar"><div class="fill" style="width: 50%;"></div></div></div>
+            <div class="skill-item"><span>Web (HTML/CSS/JS)</span><div class="bar"><div class="fill" style="width: 40%;"></div></div></div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Réalisations</h2>
+        
+        <h3 class="cat-title">🛰️ Systèmes Embarqués & IoT</h3>
+        <div class="accordion-container">
+            <details>
+                <summary>
+                    <img src="img/ihm.png" alt="IHM">
+                    <div class="summary-info">IHM de Monitoring & UART <span>Détails & Vidéo</span></div>
+                </summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Description technique</h4>
+                        <p>Interface interactive captant les données de Température, Humidité et Luminosité. Ce projet met en œuvre la transmission série <strong>UART</strong> pour le dialogue entre le microcontrôleur et l'interface PC.</p>
+                        <img src="img/uart.png" alt="Schéma UART" class="diag-small">
+                    </div>
+                    <div class="project-visual">
+                        <video controls><source src="vid/ihm.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <img src="img/portail.png" alt="Portail">
+                    <div class="summary-info">Portail Automatique <span>Détails & Vidéo</span></div>
+                </summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Automatisme</h4>
+                        <p>Système d'ouverture automatique par télémétrie ultrasonique et asservissement de servomoteur. Gestion des seuils de distance et des cycles d'ouverture/fermeture.</p>
+                    </div>
+                    <div class="project-visual">
+                        <video controls><source src="vid/portail.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <img src="img/clavier.png" alt="Clavier 4x4">
+                    <div class="summary-info">Interfaçage Clavier Matriciel <span>Détails & Vidéo</span></div>
+                </summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Interfaçage</h4>
+                        <p>Gestion d'un clavier 4x4 avec balayage des lignes et colonnes. Affichage en temps réel des touches sur écran LCD. Implémentation d'un anti-rebond logiciel.</p>
+                    </div>
+                    <div class="project-visual">
+                        <video controls><source src="vid/clavier.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <img src="img/secu.png" alt="Sécurité">
+                    <div class="summary-info">Sécurité Multi-facteurs <span>Détails & Vidéo</span></div>
+                </summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Sécurité</h4>
+                        <p>Contrôle d'accès combinant capteur tactile, détection de présence et saisie de code via télécommande Infrarouge (protocole NEC).</p>
+                    </div>
+                    <div class="project-visual">
+                        <video controls><source src="vid/secu.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <h3 class="cat-title">🔬 Lab & Auto-formation</h3>
+        <div class="accordion-container">
+            <details class="lab-card">
+                <summary>
+                    <img src="img/stm32.png" alt="STM32">
+                    <div class="summary-info">Exploration ARM STM32 Bare Metal <span>R&D en cours</span></div>
+                </summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Veille Technologique</h4>
+                        <p>Apprentissage de la programmation <strong>Bare Metal</strong> sur architecture ARM Cortex-M3 (Blue Pill). Sortie de l'écosystème Arduino pour manipuler directement les registres (RCC, GPIO, Timers).</p>
+                        <span class="status-tag">Objectif : Développement de drivers bas niveau</span>
+                    </div>
+                    <div class="project-visual">
+                        <div class="code-terminal">
+                            <code>// Configuration Registre STM32 <br>
+                            RCC->APB2ENR |= (1 << 4); <br>
+                            GPIOC->CRH &= ~(0xF << 20); <br>
+                            GPIOC->CRH |= (0x2 << 20);</code>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <h3 class="cat-title">💻 Web & Software</h3>
+        <div class="accordion-container">
+            <details>
+                <summary>
+                    <img src="img/site_web.png" alt="Site Web">
+                    <div class="summary-info">Plateforme Web Académique <span>Détails & Vidéo</span></div>
+                </summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Web</h4>
+                        <p>Développement d'un site web complet pour la gestion d'informations académiques. Travail sur l'ergonomie (UI) et le responsive design.</p>
+                    </div>
+                    <div class="project-visual">
+                        <video controls><source src="vid/site_web.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <img src="img/console.png" alt="Console">
+                    <div class="summary-info">Algorithmie C (Jeux & Parsing) <span>Détails</span></div>
+                </summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Programmation C</h4>
+                        <p><strong>Jeux :</strong> Puissance 3 et Bataille Navale avec affichage console couleur.</p>
+                        <p><strong>Gestion :</strong> Parser de flux bancaires CFONB 120 caractères avec traitement de buffers.</p>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <div class="contact-box">
+            <p>📞 07 67 54 45 46</p>
+            <p>📧 <a href="mailto:tfotsanickson@gmail.com">tfotsanickson@gmail.com</a></p>
+            <p>🔗 <a href="https://linkedin.com/in/nickson-fotsa">LinkedIn</a> | <a href="https://github.com/nick-0406">GitHub</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
