@@ -34,14 +34,21 @@
             <h2>Profil Professionnel</h2>
             <p>
                 Élève-ingénieur à l'<strong>ENSIM</strong> (spécialité ASTRE), je m'investis dans la conception de systèmes où l'informatique dialogue avec le matériel. Mon parcours technique est guidé par une double approche :
-            </p>
-            <ul class="tech-list">
-                <li><strong>Développement Logiciel & Embarqué :</strong> Une solide maîtrise du <strong>C et C++</strong> appliquée à l'interfaçage de périphériques et à la gestion de flux de données via protocoles série (UART).</li>
-                <li><strong>Science des Données sous Python :</strong> Capacité à concevoir des scripts d'analyse pour le <strong>traitement de données</strong> issues de capteurs, permettant d'automatiser l'interprétation de signaux physiques et d'optimiser le diagnostic système.</li>
-                <li><strong>Automatisme & Électronique :</strong> Expertise dans l'intégration de composants (servomoteurs, capteurs ultrasoniques/PIR) et la mise en œuvre de logiques de contrôle-commande robustes.</li>
-            </ul>
             <p>
-                Rigoureux et orienté solutions, je suis à la recherche d'une <strong>alternance à compter de Septembre 2026</strong> pour mettre mes compétences en développement et analyse au service de projets industriels innovants.
+                Élève-ingénieur à l'<strong>ENSIM</strong> (spécialité ASTRE – Architecture des Systèmes Temps Réel et Embarqués), je m'intéresse à la conception de systèmes où le logiciel interagit directement avec le matériel. 
+                Mon parcours m'a permis de développer des bases solides en <strong>systèmes embarqués</strong>, en <strong>automatique</strong> et en <strong>traitement de données issues de capteurs</strong>.
+            </p>
+
+            <ul class="tech-list">
+                <li><strong>Développement logiciel & embarqué :</strong> Programmation en <strong>C / C++</strong> sur microcontrôleurs (Arduino), avec mise en œuvre de communications série (<strong>UART</strong>), gestion de périphériques et acquisition de données provenant de capteurs.</li>
+
+                <li><strong>Traitement et exploitation de données :</strong> Utilisation de <strong>Python</strong> pour analyser et exploiter des données expérimentales, notamment issues de systèmes instrumentés, afin de faciliter l’interprétation de mesures physiques.</li>
+
+                <li><strong>Automatique & électronique appliquée :</strong> Conception de prototypes intégrant <strong>capteurs et actionneurs</strong> (servomoteurs, capteurs IR, ultrasoniques, LDR, DHT11) et mise en œuvre de logiques simples de <strong>contrôle et d’automatisation</strong>.</li>
+            </ul>
+
+            <p>
+                Curieux, rigoureux et motivé par les projets techniques concrets, je suis à la recherche d’une <strong>alternance à partir de septembre 2026</strong> afin de développer mes compétences en systèmes embarqués, automatisme et développement logiciel au sein d’un environnement industriel.
             </p>
         </div>
     </section>
@@ -96,9 +103,12 @@
                     <div class="project-description">
                         <h4>Fiche Technique</h4>
                         <ul class="tech-list">
-                            <li><strong>Hardware :</strong> Microcontrôleur & Capteurs DHT11/LDR.</li>
-                            <li><strong>Protocole :</strong> UART (Universal Asynchronous Receiver-Transmitter).</li>
-                            <li><strong>Analyse :</strong> Monitoring temps réel des données environnementales.</li>
+                            <li><strong>Supervision :</strong> Architecture IHM Web Full-Stack pour le monitoring et le pilotage distant via protocole UART.</li>
+                            <li><strong>Interfaçage :</strong> Moteur de communication JavaScript asynchrone pour la gestion bidirectionnelle du flux de données série.</li>
+                            <li><strong>Télémétrie :</strong> Acquisition et sérialisation de données environnementales critiques via capteur DHT11.</li>
+                            <li><strong>Analyse :</strong> Traitement du signal LDR avec conversion analogique-numérique et modélisation physique de la luminance.</li>
+                            <li><strong>Actuation :</strong> Commande déportée d'actionneurs (Servomoteur/LED) pour la simulation de systèmes domotiques complexes.</li>
+                            <li><strong>Optimisation :</strong> Gestion du débit binaire et contrôle de flux (Handshaking) pour garantir l'intégrité du buffer série.</li>
                         </ul>
                         <img src="img/uart.png" alt="Schéma UART" class="tech-diagram">
                     </div>
@@ -112,8 +122,12 @@
                     <div class="project-description">
                         <h4>Fiche Technique</h4>
                         <ul class="tech-list">
-                            <li><strong>Hardware :</strong> Capteur HC-SR04 & Servomoteur.</li>
-                            <li><strong>Contrôle :</strong> Asservissement de position et gestion de seuils.</li>
+                            <li><strong>Automatisation :</strong> Système intelligent de gestion de portail par détection de présence véhicule.</li>
+                            <li><strong>Détection :</strong> Capteur infrarouge haute précision pour le monitoring des flux d'entrée/sortie.</li>
+                            <li><strong>Actuation :</strong> Pilotage de servomoteur avec contrôle séquentiel et temporel du mouvement.</li>
+                            <li><strong>Monitoring :</strong> Interface LCD I2C pour la télémétrie en temps réel des états du système.</li>
+                            <li><strong>Signalétique :</strong> Feedback multisensoriel (LED & Buzzer) pour la gestion des alertes de stationnement.</li>
+                            <li><strong>Algorithme :</strong> Cycle de fonctionnement autonome : détection, transit et sécurisation automatique.</li>
                         </ul>
                     </div>
                     <div class="project-visual"><video controls><source src="vid/portail.mp4" type="video/mp4"></video></div>
@@ -126,8 +140,12 @@
                     <div class="project-description">
                         <h4>Fiche Technique</h4>
                         <ul class="tech-list">
-                            <li><strong>Logique :</strong> Balayage matriciel et gestion d'anti-rebond.</li>
-                            <li><strong>Affichage :</strong> Sortie interactive sur LCD 16x2.</li>
+                            <li><strong>Interface :</strong> Clavier matriciel 4×4 pour la gestion des entrées utilisateur.</li>
+                            <li><strong>Développement :</strong> Programmation en C/C++ sur plateforme Arduino.</li>
+                            <li><strong>Logique :</strong> Détection et décodage matriciel des lignes et colonnes.</li>
+                            <li><strong>Affichage :</strong> Intégration d'un écran LCD avec communication via bus I2C.</li>
+                            <li><strong>Validation :</strong> Tests unitaires des touches et vérification de la fiabilité en temps réel.</li>
+                            <li><strong>Modularité :</strong> Conception d'un module de saisie universel pour systèmes embarqués.</li>
                         </ul>
                     </div>
                     <div class="project-visual"><video controls><source src="vid/clavier.mp4" type="video/mp4"></video></div>
@@ -140,8 +158,12 @@
                     <div class="project-description">
                         <h4>Fiche Technique</h4>
                         <ul class="tech-list">
-                            <li><strong>Entrées :</strong> Infrarouge (NEC), PIR, Tactile.</li>
-                            <li><strong>Sécurité :</strong> Algorithme d'authentification par étapes.</li>
+                            <li><strong>Projet :</strong> Système de contrôle d’accès électronique pour habitation ou bureau.</li>
+                            <li><strong>Interface :</strong> Activation par capteur tactile et affichage sur écran LCD.</li>
+                            <li><strong>Validation :</strong> Détection de présence par capteur infrarouge avant authentification.</li>
+                            <li><strong>Saisie :</strong> Télécommande infrarouge et récepteur IR (alternative au clavier).</li>
+                            <li><strong>Feedback :</strong> Retours visuels (LED) et sonores (Buzzer) avec messages LCD.</li>
+                            <li><strong>Contrôle :</strong> Mécanisme de sécurité avec limitation à trois tentatives et alerte.</li>
                         </ul>
                     </div>
                     <div class="project-visual"><video controls><source src="vid/secu.mp4" type="video/mp4"></video></div>
@@ -157,8 +179,11 @@
                     <div class="project-description">
                         <h4>Fiche Fullstack</h4>
                         <ul class="tech-list">
-                            <li><strong>Backend :</strong> Développement dynamique PHP & MySQLi.</li>
-                            <li><strong>Frontend :</strong> HTML5 / CSS3 Responsive.</li>
+                            <li><strong>Plateforme :</strong> Système de gestion de bibliothèque numérique (SGB) pour la dématérialisation des prêts.</li>
+                            <li><strong>UX/UI :</strong> Interface adaptative (HTML5/CSS3) intégrant des modules de réservation d'espaces et de billetterie académique.</li>
+                            <li><strong>Identity :</strong> Système d'authentification sécurisé (Auth) avec gestion complète du cycle de vie des comptes étudiants (CRUD).</li>
+                            <li><strong>Backend :</strong> Architecture PHP/MySQL pour la persistence des données et l'automatisation de la gestion des stocks en temps réel.</li>
+                            <li><strong>Session :</strong> Persistance d'état via cookies et tokens JavaScript pour une expérience utilisateur fluide et sécurisée.</li>
                         </ul>
                     </div>
                     <div class="project-visual"><video controls><source src="vid/site_web.mp4" type="video/mp4"></video></div>
