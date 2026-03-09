@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="particles">
         <div class="particle"></div>
@@ -86,7 +87,7 @@
                     <div class="tool-item"><img src="img/js.png" alt="JS"><span>JavaScript</span></div>
                     <div class="tool-item"><img src="img/solidworks.png" alt="SolidWorks"><span>SolidWorks</span></div>
                     <div class="tool-item"><img src="img/c+.png" alt="C/C++"><span>C/C++</span></div>
-                    <div class="tool-item"><span class="tool-icon">🧪</span><span>LabVIEW</span></div>
+                    <div class="tool-item"><img src="img/lab.png" alt="labview"><span>Labview</span></div>
                 </div>
             </div>
         </div>
@@ -169,6 +170,25 @@
                     <div class="project-visual"><video controls><source src="vid/secu.mp4" type="video/mp4"></video></div>
                 </div>
             </details>
+
+            <details>
+                <summary><img src="img/eau.png" alt="Niveau Eau"> 
+                <div class="summary-info">Détection de Niveau d’Eau <span>Détails</span></div></summary>
+                <div class="expanded-layout">
+                    <div class="project-description">
+                        <h4>Fiche Technique</h4>
+                        <ul class="tech-list">
+                            <li><strong>Instrumentation :</strong> Mise en œuvre d’un capteur analogique de niveau d’eau pour la détection de la hauteur de liquide.</li>
+                            <li><strong>Acquisition :</strong> Lecture de la valeur capteur via conversion analogique-numérique du microcontrôleur Arduino.</li>
+                            <li><strong>Traitement :</strong> Interprétation de la mesure brute afin de déterminer l’état du niveau d’eau.</li>
+                            <li><strong>Affichage :</strong> Visualisation en temps réel de la valeur mesurée sur un écran LCD 16x2 utilisant le bus I2C.</li>
+                            <li><strong>Architecture :</strong> Prototype simple d’un système de monitoring de niveau pouvant servir de base pour des systèmes de gestion de réservoir ou d’automatisation hydraulique.</li>
+                            <li><strong>Évolution possible :</strong> Extension future vers un système de régulation automatisé avec commande de pompe ou moteur DC.</li>
+                        </ul>
+                    </div>
+                    <div class="project-visual"><video controls><source src="vid/niveau_eau.mp4" type="video/mp4"></video></div>
+                </div>
+            </details>
         </div>
 
         <h3 class="cat-title">💻 Web & Software</h3>
@@ -214,5 +234,6 @@
             <a href="CV_Nickson_FOTSA.pdf" download="CV_Nickson_FOTSA" class="btn-download">📄 Télécharger mon CV</a>
         </div>
     </footer>
+    <script src="network.js"></script>
 </body>
 </html>
