@@ -7,103 +7,271 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
-    <header>
-        <div class="hero">
-            <h1>Nickson FOTSA</h1>
-            <p class="tagline">Élève-Ingénieur ASTRE | Systèmes Embarqués & Software</p>
-        </div>
-    </header>
-
+    <script src="network.js"></script>
     <nav>
         <a href="#profil">Profil</a>
-        <a href="#competences">Compétences</a>
+        <a href="#formations">Parcours</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#stack">Compétences</a>
         <a href="#projets">Réalisations</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <header class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-name">Nickson FOTSA</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-job">Apprentis Ingénieur Système embarqué et Informatique</p>
+    </div>
+    </header>
+
     <section id="profil">
-        <div class="profil-card">
-            <h2>Profil Professionnel</h2>
-            <p>
-                Élève-ingénieur à l'<strong>ENSIM</strong> (spécialité ASTRE), je m'investis dans la conception de systèmes où l'informatique dialogue avec le matériel. Mon parcours technique est guidé par une double approche :
-            <p>
-                Élève-ingénieur à l'<strong>ENSIM</strong> (spécialité ASTRE – Architecture des Systèmes Temps Réel et Embarqués), je m'intéresse à la conception de systèmes où le logiciel interagit directement avec le matériel. 
-                Mon parcours m'a permis de développer des bases solides en <strong>systèmes embarqués</strong>, en <strong>automatique</strong> et en <strong>traitement de données issues de capteurs</strong>.
-            </p>
+    <div class="profil-card">
+        <h2>Profil Professionnel</h2>
 
-            <ul class="tech-list">
-                <li><strong>Développement logiciel & embarqué :</strong> Programmation en <strong>C / C++</strong> sur microcontrôleurs (Arduino), avec mise en œuvre de communications série (<strong>UART</strong>), gestion de périphériques et acquisition de données provenant de capteurs.</li>
+        <div class="profil-accroche-box">
+            Étudiant en 1ère année de cycle ingénieur à l'<strong>ENSIM</strong>, admis en 
+            <strong>2ᵉ année en parcours alternance</strong>, je suis actuellement à la 
+            recherche d'une <strong>alternance en développement embarqué</strong> 
+            pour une durée de deux ans à partir de <strong>septembre 2026</strong>.
 
-                <li><strong>Traitement et exploitation de données :</strong> Utilisation de <strong>Python</strong> pour analyser et exploiter des données expérimentales, notamment issues de systèmes instrumentés, afin de faciliter l’interprétation de mesures physiques.</li>
+        <p>
+            Motivé par les environnements technologiques et les projets innovants, 
+            je souhaite intégrer une entreprise où je pourrai développer mes compétences 
+            tout en contribuant concrètement à des projets innovants.
+        </p></div>
 
-                <li><strong>Automatique & électronique appliquée :</strong> Conception de prototypes intégrant <strong>capteurs et actionneurs</strong> (servomoteurs, capteurs IR, ultrasoniques, LDR, DHT11) et mise en œuvre de logiques simples de <strong>contrôle et d’automatisation</strong>.</li>
-            </ul>
+    </div>
+</section>
 
-            <p>
-                Curieux, rigoureux et motivé par les projets techniques concrets, je suis à la recherche d’une <strong>alternance à partir de septembre 2026</strong> afin de développer mes compétences en systèmes embarqués, automatisme et développement logiciel au sein d’un environnement industriel.
-            </p>
+    <section id="formations">
+        <h2>Parcours Académique</h2>
+        <div class="matrix-grid">
+            
+            <details class="matrix-card">
+                <summary>
+                    <div class="card-thumb">
+                        <img src="img/logo_ensim.png">
+                        <span>ENSIM | 2025 - Présent</span>
+                    </div>
+                </summary>
+                <div class="card-content">
+                    <h3>Ingénieur ASTRE</h3>
+                    <div class="split">
+                        <div>
+                            <h4>Systèmes Embarqués</h4>
+                            <ul>
+                                <li>Architecture ARM Cortex-M</li>
+                                <li>OS Temps Réel (FreeRTOS)</li>
+                                <li>Linux Embarqué & Yocto</li>
+                                <li>Driver Development</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Autres modules</h4>
+                            <ul>
+                                <li>Dévéloppement Web</li>
+                                <li>Conception d' IHM</li>
+                                <li>Communication réseau & Protocoles IP</li>
+                                <li>Gestion de projets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="company-link-wrapper">
+                        <a href="https://ensim.univ-lemans.fr/fr/index.html" target="_blank" class="company-link">Découvrir l'établissement</a>
+                    </div>
+                </div>
+            </details>
+
+            <details class="matrix-card">
+                <summary>
+                    <div class="card-thumb">
+                        <img src="img/logo_iut_bandjoun.png">
+                        <span>IUT Bandjoun | 2023 - 2025</span>
+                    </div>
+                </summary>
+                <div class="card-content">
+                    <h3>DUT Génie Électrique & Info. Industrielle</h3>
+                    <div class="split">
+                        <div>
+                            <h4>Automatisme & Élec</h4>
+                            <ul>
+                                <li>Automates (TIA Portal, Unity)</li>
+                                <li>Électronique de Puissance</li>
+                                <li>Machines Électriques</li>
+                                <li>Instrumentation & Capteurs</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Informatique</h4>
+                            <ul>
+                                <li>Langages C / C++</li>
+                                <li>Microcontrôleurs (AVR, PIC)</li>
+                                <li>Bases de données SQL</li>
+                                <li>Supervision (SCADA)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="company-link-wrapper">
+                        <a href="https://www.univ-dschang.org/iutfv/" target="_blank" class="company-link">Découvrir l'établissement</a>
+                    </div>
+                </div>
+            </details>
+
+            <details class="matrix-card">
+                <summary>
+                    <div class="card-thumb">
+                        <img src="img/logo_uy1.png">
+                        <span>Univ. Yaoundé I | 2022 - 2023</span>
+                    </div>
+                </summary>
+                <div class="card-content">
+                    <h3>L1 Physique - Sciences Fondamentales</h3>
+                    <div class="split">
+                        <div>
+                            <h4>Physique</h4>
+                            <ul>
+                                <li>Mécanique du Point</li>
+                                <li>Électromagnétisme</li>
+                                <li>Optique Géométrique</li>
+                                <li>Thermodynamique</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Mathématiques</h4>
+                            <ul>
+                                <li>Analyse réelle</li>
+                                <li>Algèbre Linéaire</li>
+                                <li>Probabilités & Statistiques</li>
+                                <li>Calcul Numérique</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="company-link-wrapper">
+                        <a href="https://uy1.uninet.cm/" target="_blank" class="company-link">Découvrir l'établissement</a>
+                    </div>
+                </div>
+            </details>
+
         </div>
     </section>
 
-    <section id="competences">
-        <h2>Expertise & Écosystème</h2>
-        <div class="skills-container">
-            <div class="skills-wrapper">
-                <div class="skill-item">
-                    <div class="skill-info"><span>C / C++</span><span>85%</span></div>
-                    <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+    <section id="experiences">
+        <h2>Expériences Professionnelles</h2>
+        <div class="matrix-grid">
+            
+            <details class="matrix-card">
+                <summary>
+                    <div class="card-thumb">
+                        <img src="img/logo_cco.png">
+                        <span>CCO SA | Mai 2025</span>
+                    </div>
+                </summary>
+                <div class="card-content">
+                    <h4>Technicien stagiaire en automatisme</h4>
+                    <div class="exp-detail">
+                        <p><strong>Contexte :</strong> Immersion au sein d'une unité de production industrielle.</p>
+                        <ul>
+                            <li><strong>Mise en service :</strong> Participation active au paramétrage et au test des automates programmables industriels (API).</li>
+                            <li><strong>Diagnostic technique :</strong> Identification et résolution de pannes sur les capteurs de position et les actionneurs pneumatiques.</li>
+                            <li><strong>Analyse système :</strong> Étude approfondie du cycle de production pour optimiser les temps de réponse.</li>
+                            <li><strong>Livrable :</strong> Rédaction d'un guide de maintenance préventive pour les équipes techniques.</li>
+                        </ul>
+                    </div>
+                    <div class="company-link-wrapper">
+                        <a href="https://maligah.com/entreprises/details/complexe-cosmetique-de-louest?id=24241" target="_blank" class="company-link">Découvrir le C.C.O</a>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Assembleur</span><span>65%</span></div>
-                    <div class="bar"><div class="fill" style="width: 65%;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Python (Data & Scripting)</span><span>65%</span></div>
-                    <div class="bar"><div class="fill" style="width: 65%;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Java / PHP / JS</span><span>55%</span></div>
-                    <div class="bar"><div class="fill" style="width: 55%;"></div></div>
-                </div>
-            </div>
+            </details>
 
-            <div class="tools-stack">
-                <h3>Outils & Environnements</h3>
-                <div class="stack-grid">
-                    <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
-                    <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino"><span>Arduino</span></div>
-                    <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode"><span>VS Code</span></div>
-                    <div class="tool-item"><img src="img/python.png" alt="Python"><span>Python</span></div>
-                    <div class="tool-item"><img src="img/java.png" alt="Java"><span>Java</span></div>
-                    <div class="tool-item"><img src="img/js.png" alt="JS"><span>JavaScript</span></div>
-                    <div class="tool-item"><img src="img/solidworks.png" alt="SolidWorks"><span>SolidWorks</span></div>
-                    <div class="tool-item"><img src="img/c+.png" alt="C/C++"><span>C/C++</span></div>
-                    <div class="tool-item"><img src="img/lab.png" alt="labview"><span>Labview</span></div>
+            <details class="matrix-card">
+                <summary>
+                    <div class="card-thumb">
+                        <img src="img/logo_gecs.png">
+                        <span>GECS SARL | ÉTÉ 2022 - 2024</span>
+                    </div>
+                </summary>
+                <div class="card-content">
+                    <h4>Assistant Technicien en installations électriques</h4>
+                    <div class="exp-detail">
+                        <p><strong>Contexte :</strong> Support technique sur des chantiers d'électrification résidentielle et industrielle.</p>
+                        <ul>
+                            <li><strong>Bureau d'études :</strong> Conception de plans d'implantation électrique via des logiciels de CAO.</li>
+                            <li><strong>Schématique :</strong> Lecture, analyse et interprétation de schémas de câblage complexes (armoires de distribution).</li>
+                            <li><strong>Énergie Solaire :</strong> Dimensionnement de parcs de batteries et pose de panneaux photovoltaïques en site isolé.</li>
+                            <li><strong>Conformité :</strong> Vérification de la mise à la terre et des dispositifs de protection différentielle.</li>
+                        </ul>
+                    </div>
+                    <div class="company-link-wrapper">
+                        <a href="https://www.facebook.com/teulogegaetan/?locale=fa_IR" target="_blank" class="company-link">Découvrir le GECS</a>
+                    </div>
+                    </div>
+            </details>
+
+            <details class="matrix-card">
+                <summary>
+                    <div class="card-thumb">
+                        <img src="img/logo_tchoffo.png">
+                        <span>Tchoffo SARL | ÉTÉ 2021 - 2023</span>
+                    </div>
+                </summary>
+                <div class="card-content">
+                    <h4>Employé libre-service</h4>
+                    <div class="exp-detail">
+                        <p><strong>Compétences transversales :</strong> Rigueur et gestion de l'urgence.</p>
+                        <ul>
+                            <li><strong>Logistique :</strong> Gestion des flux de marchandises et inventaires tournants.</li>
+                            <li><strong>Organisation :</strong> Optimisation de l'espace de stockage pour fluidifier le réapprovisionnement.</li>
+                            <li><strong>Polyvalence :</strong> Travail en équipe et respect strict des procédures de sécurité.</li>
+                        </ul>
+                    </div>
+                    <div class="company-link-wrapper">
+                        <a href="https://mapcarta.com/fr/N11465290170" target="_blank" class="company-link">Découvrir l'établissement</a>
+                    </div>
                 </div>
-            </div>
+            </details>
+
+        </div>
+    </section>
+
+    <section id="stack">
+        <h2>Compétences</h2>
+        <div class="stack-grid">
+            <div class="tool"><img src="img/cplusplus.png"><span>C/C++</span></div>
+            <div class="tool"><img src="img/stm32.png"><span>STM32</span></div>
+            <div class="tool"><img src="img/linux.png"><span>Linux</span></div>
+            <div class="tool"><img src="img/arduino.png"><span>Arduino</span></div>
+            <div class="tool"><img src="img/python.png"><span>Python</span></div>
+            <div class="tool"><img src="img/asm.png"><span>Assembleur</span></div>
+            <div class="tool"><img src="img/java.png"><span>Java</span></div>
+            <div class="tool"><img src="img/php.png"><span>PHP</span></div>
+            <div class="tool"><img src="img/js.png"><span>JS</span></div>
+            <div class="tool"><img src="img/sql.png"><span>SQL</span></div>
+            <div class="tool"><img src="img/git.png"><span>Git</span></div>
+            <div class="tool"><img src="img/figma.png"><span>Figma</span></div>
+            <div class="tool"><img src="img/solidworks.png"><span>SolidWorks</span></div>
+            <div class="tool"><img src="img/lab.png"><span>LabVIEW</span></div>
         </div>
     </section>
 
     <section id="projets">
-        <h2>Réalisations</h2>
+    <h2>Réalisations</h2>
+
+    <h3 class="sub-title">🛡️ Systèmes Embarqués & Informatique Industrielle</h3>
+    <div class="matrix-grid">
         
-        <h3 class="cat-title">🛰️ Systèmes Embarqués & IoT</h3>
-        <div class="accordion-container">
-            <details>
-                <summary><img src="img/ihm.png" alt="IHM"> <div class="summary-info">IHM Monitoring & UART <span>Détails & Vidéo</span></div></summary>
-                <div class="expanded-layout">
-                    <div class="project-description">
-                        <h4>Fiche Technique</h4>
-                        <ul class="tech-list">
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/ihm.png"><span>IHM Monitoring & UART</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><video controls><source src="vid/ihm.mp4"></video></div>
+                    <div class="info-side">
+                        <h3>IHM Monitoring & UART</h3>
+                        <p><strong>Objectif :</strong> Supervision du traitement .</p>
+                        <ul>
                             <li><strong>Supervision :</strong> Architecture IHM Web Full-Stack pour le monitoring et le pilotage distant via protocole UART.</li>
                             <li><strong>Interfaçage :</strong> Moteur de communication JavaScript asynchrone pour la gestion bidirectionnelle du flux de données série.</li>
                             <li><strong>Télémétrie :</strong> Acquisition et sérialisation de données environnementales critiques via capteur DHT11.</li>
@@ -111,18 +279,25 @@
                             <li><strong>Actuation :</strong> Commande déportée d'actionneurs (Servomoteur/LED) pour la simulation de systèmes domotiques complexes.</li>
                             <li><strong>Optimisation :</strong> Gestion du débit binaire et contrôle de flux (Handshaking) pour garantir l'intégrité du buffer série.</li>
                         </ul>
-                        <img src="img/uart.png" alt="Schéma UART" class="tech-diagram">
+                        <a href="https://github.com/nick-0406/IHM_monitoring.git" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
                     </div>
-                    <div class="project-visual"><video controls><source src="vid/ihm.mp4" type="video/mp4"></video></div>
                 </div>
-            </details>
+            </div>
+        </details>
 
-            <details>
-                <summary><img src="img/portail.png" alt="Portail"> <div class="summary-info">Portail Automatique <span>Détails & Vidéo</span></div></summary>
-                <div class="expanded-layout">
-                    <div class="project-description">
-                        <h4>Fiche Technique</h4>
-                        <ul class="tech-list">
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/portail.png"><span>Portail Automatique</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><video controls><source src="vid/portail.mp4"></video></div>
+                    <div class="info-side">
+                        <h3>Portail Automatique</h3>
+                        <p><strong>Objectif :</strong> Système mécatronique d'accès sécurisé.</p>
+                        <ul>
                             <li><strong>Automatisation :</strong> Système intelligent de gestion de portail par détection de présence véhicule.</li>
                             <li><strong>Détection :</strong> Capteur infrarouge haute précision pour le monitoring des flux d'entrée/sortie.</li>
                             <li><strong>Actuation :</strong> Pilotage de servomoteur avec contrôle séquentiel et temporel du mouvement.</li>
@@ -130,17 +305,25 @@
                             <li><strong>Signalétique :</strong> Feedback multisensoriel (LED & Buzzer) pour la gestion des alertes de stationnement.</li>
                             <li><strong>Algorithme :</strong> Cycle de fonctionnement autonome : détection, transit et sécurisation automatique.</li>
                         </ul>
+                        <a href="https://github.com/nick-0406/Portail_automatique.git" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
                     </div>
-                    <div class="project-visual"><video controls><source src="vid/portail.mp4" type="video/mp4"></video></div>
                 </div>
-            </details>
+            </div>
+        </details>
 
-            <details>
-                <summary><img src="img/clavier.png" alt="Clavier"> <div class="summary-info">Clavier Matriciel 4x4 <span>Détails & Vidéo</span></div></summary>
-                <div class="expanded-layout">
-                    <div class="project-description">
-                        <h4>Fiche Technique</h4>
-                        <ul class="tech-list">
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/clavier.png"><span>Clavier Matriciel 4x4</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><video controls><source src="vid/clavier.mp4"></video></div>
+                    <div class="info-side">
+                        <h3>Clavier Matriciel</h3>
+                        <p><strong>Objectif :</strong> Driver d'entrée utilisateur optimisé.</p>
+                        <ul>
                             <li><strong>Interface :</strong> Clavier matriciel 4×4 pour la gestion des entrées utilisateur.</li>
                             <li><strong>Développement :</strong> Programmation en C/C++ sur plateforme Arduino.</li>
                             <li><strong>Logique :</strong> Détection et décodage matriciel des lignes et colonnes.</li>
@@ -148,17 +331,25 @@
                             <li><strong>Validation :</strong> Tests unitaires des touches et vérification de la fiabilité en temps réel.</li>
                             <li><strong>Modularité :</strong> Conception d'un module de saisie universel pour systèmes embarqués.</li>
                         </ul>
+                        <a href="https://github.com/nick-0406/Keyboard_control.git" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
                     </div>
-                    <div class="project-visual"><video controls><source src="vid/clavier.mp4" type="video/mp4"></video></div>
                 </div>
-            </details>
+            </div>
+        </details>
 
-            <details>
-                <summary><img src="img/secu.png" alt="Sécurité"> <div class="summary-info">Sécurité Multi-facteurs <span>Détails & Vidéo</span></div></summary>
-                <div class="expanded-layout">
-                    <div class="project-description">
-                        <h4>Fiche Technique</h4>
-                        <ul class="tech-list">
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/secu.png"><span>Sécurité Multi-facteurs</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><video controls><source src="vid/secu.mp4"></video></div>
+                    <div class="info-side">
+                        <h3>Sécurité Multi-facteurs</h3>
+                        <p><strong>Objectif :</strong> Dispositif d'alarme et contrôle d'accès.</p>
+                        <ul>
                             <li><strong>Projet :</strong> Système de contrôle d’accès électronique pour habitation ou bureau.</li>
                             <li><strong>Interface :</strong> Activation par capteur tactile et affichage sur écran LCD.</li>
                             <li><strong>Validation :</strong> Détection de présence par capteur infrarouge avant authentification.</li>
@@ -166,18 +357,25 @@
                             <li><strong>Feedback :</strong> Retours visuels (LED) et sonores (Buzzer) avec messages LCD.</li>
                             <li><strong>Contrôle :</strong> Mécanisme de sécurité avec limitation à trois tentatives et alerte.</li>
                         </ul>
+                        <a href="https://github.com/nick-0406/secure_home.git" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
                     </div>
-                    <div class="project-visual"><video controls><source src="vid/secu.mp4" type="video/mp4"></video></div>
                 </div>
-            </details>
+            </div>
+        </details>
 
-            <details>
-                <summary><img src="img/eau.png" alt="Niveau Eau"> 
-                <div class="summary-info">Détection de Niveau d’Eau <span>Détails & Vidéo</span></div></summary>
-                <div class="expanded-layout">
-                    <div class="project-description">
-                        <h4>Fiche Technique</h4>
-                        <ul class="tech-list">
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/eau.png"><span>Détection Niveau d'Eau</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><video controls><source src="vid/eau.mp4"></video></div>
+                    <div class="info-side">
+                        <h3>Détection Niveau d'Eau</h3>
+                        <p><strong>Objectif :</strong> Monitoring de cuve industriel.</p>
+                        <ul>
                             <li><strong>Instrumentation :</strong> Mise en œuvre d’un capteur analogique de niveau d’eau pour la détection de la hauteur de liquide.</li>
                             <li><strong>Acquisition :</strong> Lecture de la valeur capteur via conversion analogique-numérique du microcontrôleur Arduino.</li>
                             <li><strong>Traitement :</strong> Interprétation de la mesure brute afin de déterminer l’état du niveau d’eau.</li>
@@ -185,55 +383,119 @@
                             <li><strong>Architecture :</strong> Prototype simple d’un système de monitoring de niveau pouvant servir de base pour des systèmes de gestion de réservoir ou d’automatisation hydraulique.</li>
                             <li><strong>Évolution possible :</strong> Extension future vers un système de régulation automatisé avec commande de pompe ou moteur DC.</li>
                         </ul>
+                        <a href="https://github.com/nick-0406/WATER_LEVEL" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
                     </div>
-                    <div class="project-visual"><video controls><source src="vid/niveau_eau.mp4" type="video/mp4"></video></div>
                 </div>
-            </details>
-        </div>
+            </div>
+        </details>
+    </div>
 
-        <h3 class="cat-title">💻 Web & Software</h3>
-        <div class="accordion-container">
-            <details>
-                <summary><img src="img/site_web.png" alt="Web"> <div class="summary-info">Plateforme Web Académique <span>Détails & Vidéo</span></div></summary>
-                <div class="expanded-layout">
-                    <div class="project-description">
-                        <h4>Fiche Fullstack</h4>
-                        <ul class="tech-list">
-                            <li><strong>Plateforme :</strong> Système de gestion de bibliothèque numérique (SGB) pour la dématérialisation des prêts.</li>
-                            <li><strong>UX/UI :</strong> Interface adaptative (HTML5/CSS3) intégrant des modules de réservation d'espaces et de billetterie académique.</li>
-                            <li><strong>Identity :</strong> Système d'authentification sécurisé (Auth) avec gestion complète du cycle de vie des comptes étudiants (CRUD).</li>
-                            <li><strong>Backend :</strong> Architecture PHP/MySQL pour la persistence des données et l'automatisation de la gestion des stocks en temps réel.</li>
-                            <li><strong>Session :</strong> Persistance d'état via cookies et tokens JavaScript pour une expérience utilisateur fluide et sécurisée.</li>
+    <h3 class="sub-title" style="margin-top: 50px;">💻 Logiciels & Algorithmique</h3>
+    <div class="matrix-grid">
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/cfon.png"><span>Parsing Flux C (CFONB)</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><img src="img/CFONB.png"></div>
+                    <div class="info-side">
+                        <h3>Parsing Flux Bancaire C</h3>
+                        <p><strong>Objectif :</strong> Analyseur de fichiers à plat conforme à la norme CFONB 120.</p>
+                        <ul>
+                            <li><strong>Architecture :</strong> Conception modulaire permettant une séparation stricte des tâches entre les différents fichiers exécutables.</li>
+                            <li><strong>Data Workflow :</strong> Parsing complet, structuration et validation rigoureuse des données avant tout affichage console.</li>
+                            <li><strong>Recherche :</strong> Algorithme de recherche optimisé et intégré nativement au cœur de la logique métier du programme.</li>
+                            <li><strong>Interface CLI :</strong> Traitement dynamique des requêtes utilisateur via l'interprétation d'instructions passées en lignes de commande.</li>
+                            <li><strong>Robustesse :</strong> Gestion des flux de données avec contrôle d'intégrité pour garantir la fiabilité des informations traitées.</li>
                         </ul>
+                        <a href="https://github.com/nick-0406/CFONB_Analyser.git" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
                     </div>
-                    <div class="project-visual"><video controls><source src="vid/site_web.mp4" type="video/mp4"></video></div>
                 </div>
-            </details>
+            </div>
+        </details>
 
-            <details>
-                <summary><img src="img/console.png" alt="Console"> <div class="summary-info">Algorithmie C (Parsing & Jeux) <span>Détails</span></div></summary>
-                <div class="expanded-layout">
-                    <div class="project-description">
-                        <h4>Programmation C</h4>
-                        <ul class="tech-list">
-                            <li><strong>Parsing :</strong> Analyse de flux bancaires (CFONB 120).</li>
-                            <li><strong>Jeux :</strong> Puissance 3 et Bataille Navale.</li>
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/site_web.png"><span>Site web bibliothèque</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><video controls><source src="vid/site_web.mp4"></video></div>
+                    <div class="info-side">
+                        <h3>Site web bibliothèque</h3>
+                        <p><strong>Objectif :</strong> Système de gestion d'empreints dans une bibliothèque.</p>
+                        <ul>
+                            <li><strong>Frontend Dynamique :</strong> Interface fluide en HTML5/CSS3 avec animations d'objets et transitions d'états pour une expérience utilisateur interactive.</li>
+<li><strong>Architecture Serveur :</strong> Backend robuste en PHP assurant la communication entre l'interface utilisateur et la logique métier du site.</li>
+<li><strong>Gestion de Données :</strong> Système CRUD via MySQLi permettant l'ajout, la suppression et la mise à jour en temps réel des espaces et des emprunts.</li>
+<li><strong>Moteur de Recherche :</strong> Implémentation d'un algorithme de filtrage dynamique pour indexer et retrouver instantanément les livres dans la base de données.</li>
+<li><strong>Contenu Adaptatif :</strong> Génération automatique des vues et des inventaires en fonction des requêtes SQL et de l'état actuel de la bibliothèque.</li>
                         </ul>
+                        <a href="https://github.com/nick-0406/ProjetHTML/tree/user" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
                     </div>
                 </div>
-            </details>
-        </div>
-    </section>
+            </div>
+        </details>
 
-    <footer id="contact">
-        <div class="contact-box">
-            <p>📞 07 67 54 45 46 | 📧 <a href="mailto:tfotsanickson@gmail.com">tfotsanickson@gmail.com</a></p>
-            <p>🔗 <a href="https://linkedin.com/in/nickson-fotsa">LinkedIn</a> | <a href="https://github.com/nick-0406">GitHub</a></p>
+        <details class="matrix-card">
+            <summary>
+                <div class="card-thumb"><img src="img/batailles.png"><span>Bataille Navale</span></div>
+            </summary>
+            <div class="card-content">
+                <div class="project-layout">
+                    <div class="video-side"><img src="img/bataille.png"></div>
+                    <div class="info-side">
+                        <h3>Programmation du jeu en C</h3>
+                        <p><strong>Objectif :</strong> Bataille navale.</p>
+                        <ul>
+                            <<li><strong>Architecture Modulaire :</strong> Organisation du code en modules distincts (moteur de jeu, affichage, gestion de flotte) pour une maintenance facilitée.</li>
+<li><strong>Moteur Logique :</strong> Implémentation complète des règles classiques avec détection automatique des navires "touchés", "coulés" ou "à l'eau".</li>
+<li><strong>Gestion de Matrice :</strong> Manipulation de tableaux multidimensionnels dynamiques pour représenter les grilles de tir et de positionnement.</li>
+<li><strong>Intelligence Artificielle :</strong> Développement d'un algorithme de tir stratégique (aléatoire ou ciblé) pour simuler un adversaire autonome.</li>
+<li><strong>Robustesse Système :</strong> Validation rigoureuse des coordonnées saisies et gestion des collisions lors du placement initial des navires.</li>
+                        </ul>
+                        <a href="https://github.com/nick-0406/Bataille-navale.git" class="github-btn">
+                            <img src="img/github_logo.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+    </div>
+</section>
+
+    <section id="contact">
+    <h2>Me Contacter</h2>
+    <div class="contact-container">
+        <div class="contact-grid">
+            <a href="https://www.linkedin.com/in/nickson-fotsa/" target="_blank" class="contact-item">
+    <div class="contact-icon-placeholder">
+        <img src="img/linkedin.png" alt="LinkedIn"> </div><span>LinkedIn</span></a>
+
+        <a href="tel:+33767544546" class="contact-item">
+            <div class="contact-icon-placeholder">
+                <img src="img/phone.png" alt="Téléphone"></div><span>07 67 54 45 46</span></a>
+
+        <a href="https://github.com/nick-0406" target="_blank" class="contact-item">
+            <div class="contact-icon-placeholder">
+                <img src="img/github_logo.png" alt="GitHub">
+            </div>
+            <span>GitHub</span>
+        </a>
         </div>
-        <div class="cv-download">
-            <a href="CV_Nickson_FOTSA.pdf" download="CV_Nickson_FOTSA" class="btn-download">📄 Télécharger mon CV</a>
+
+                <div class="cv-wrapper">
+                    <a href="Nickson_FOTSA.pdf" download="Nickson_FOTSA.pdf" class="cv-button"><span>Télécharger mon CV</span><div class="download-icon">↓</div></a>
         </div>
-    </footer>
-    <script src="network.js"></script>
+    </div>
+</section>
 </body>
 </html>
