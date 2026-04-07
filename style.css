@@ -163,6 +163,13 @@ opacity:.8;
 }
 
 
+.profil-accroche-box {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+
 /* =========================================================
 CARDS
 ========================================================= */
