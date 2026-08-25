@@ -39,9 +39,12 @@
      HERO
      ============================================ -->
 <header class="hero" id="hero">
-  <video class="hero-video" autoplay muted loop playsinline>
+  <video class="hero-video" autoplay muted loop playsinline webkit-playsinline>
     <source src="medias/hero.mp4" type="video/mp4">
   </video>
+  <script>
+    document.querySelector('.hero-video').play().catch(function(){});
+  </script>
   <div class="hero-overlay"></div>
 
   <div class="hero-inner">
